@@ -10,7 +10,8 @@ class Solution(object):
                start += i
            else:
                 start -= i
-        #return i == 0         
+        #if i == 0:
+           return True    
 
 ob = Solution()
 print(ob.canReach[[4,2,3,0,3,1,2], 0])
