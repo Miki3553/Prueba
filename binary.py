@@ -1,7 +1,7 @@
 class Solution(object):
     def addBinary(self, a, b):
-        a = input()
-        b = input()
+        a = a
+        b = b       
         c = ''
         extra = 0
         if len(a) > len(b):
@@ -32,6 +32,20 @@ class Solution(object):
         if extra == 1:
             c = '1' + c
         return c
+    def IntBinary(self, a):
+        a = a
+        j = 0
+        conv = 0
+        for i in range(0,len(a)):
+            j = -(i+1)
+            if a[j] == '1':
+                conv = conv + 2**i
+        return conv
         
 ob = Solution()
-print (ob.addBinary(input,input))    
+a = input()
+b = input()
+print(ob.addBinary(a,b))   
+print(ob.IntBinary(a))
+print(ob.IntBinary(b))
+print(ob.IntBinary(ob.addBinary(a,b))) 
