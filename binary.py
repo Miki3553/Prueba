@@ -2,7 +2,6 @@ a = input()
 b = input()
 c = ''
 extra = 0
-binario_mayor = max(len(a),len(b))
 if len(a) > len(b):
      for i in range(len(a)-len(b)):
           b = '0' + b
