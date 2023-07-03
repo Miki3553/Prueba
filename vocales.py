@@ -13,11 +13,6 @@ class Vocales(object):
             if e[i] == 'e' or e[i] == 'E':
                 cont +=1
         return cont
-    
-
-
-
-
 vocal = Vocales()
 palabra = input()
 print(vocal.contar_a(palabra))
