@@ -14,7 +14,6 @@ def asereje (array, minimum):
     return True
 
 arrayObstacles = [15,10,22,12,13,16,18,21]
-#respuesta deberia ser 7
 check = False
 minimumJump = 0
 while check == False:
